@@ -9,6 +9,7 @@ import {
   SecondText,
   ThirdContainer,
   DiversityImg,
+  Text,
   Footer,
   ContainerFooter,
   AFooter,
@@ -39,8 +40,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <Container maxWidth="100vw">
-       
+      <Container fixed>
         <FirstContainer>
           <FirstImg src={tarjaazul} alt={""} />
           <FirstImg2 src={mulhernegra} alt={"mulher negra"}/>
@@ -49,17 +49,21 @@ const HomePage = () => {
          <ButtonDiv> 
           <Button>
             <DiversityImg src={negro} alt={""} />
-            <legend>RACIAL</legend>
+            <Text>RACIAL</Text>
           </Button>
          </ButtonDiv>
+         <ButtonDiv>
           <Button>
             <DiversityImg src={lgbt} alt={""} />
-            <legend>LGBTQIA+</legend>
+            <Text>LGBTQIA+</Text>
           </Button>
+         </ButtonDiv> 
+         <ButtonDiv>
           <Button>
             <DiversityImg src={pcd} alt={""} />
-            <legend>PCD</legend>
+            <Text>PCD</Text>
           </Button>
+         </ButtonDiv> 
         </SecondContainer>
         <ThirdContainer>
           <SecondText>
